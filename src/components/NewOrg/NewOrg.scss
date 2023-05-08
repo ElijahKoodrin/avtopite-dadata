@@ -1,0 +1,28 @@
+@import "../../assets/styles/mixins";
+@import "../../assets/styles/colors";
+
+.new-org {
+	@include flexify(column);
+
+	&_title {
+		margin-bottom: 3px;
+		color: $dark-grey;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 500;
+	}
+
+	&_input {
+		width: 100%;
+		padding: 14px 16px;
+		vertical-align: top;
+		color: $light-grey;
+		border: 1px solid $light-grey-1;
+		transition: all .1s ease-in;
+
+		&:focus {
+			border: 1px solid $yellow-active;
+			color: $mid-grey;
+		}
+	}
+}
