@@ -1,8 +1,8 @@
-@import "../../assets/styles/mixins";
 @import "../../assets/styles/colors";
 
 .new-org {
-	@include flexify(column);
+	display: flex;
+	flex-direction: column;
 
 	&_title {
 		margin-bottom: 3px;

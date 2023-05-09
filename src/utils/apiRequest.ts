@@ -19,7 +19,7 @@ export const fetchData = async (query: string) => {
             }
         }
     )
-        .then(async (response) => {
+        .then((response) => {
             const returnedData: ICompany[] = response.data.suggestions.map((item: any) => {
                 return {
                     name: item.unrestricted_value,
@@ -37,6 +37,6 @@ export const fetchData = async (query: string) => {
                     id: item.data.hid
                 };
             });
-            return await returnedData;
+            return returnedData;
         });
 };
