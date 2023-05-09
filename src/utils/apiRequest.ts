@@ -5,7 +5,7 @@ const token = "e12ac17c0a2530d6d7b871608b547f48c7e33e48";
 
 
 export const fetchData = async (query: string) => {
-    const response = await axios.get(
+    return await axios.get(
         "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/party",
 
         {
@@ -39,5 +39,4 @@ export const fetchData = async (query: string) => {
             });
             return await returnedData;
         });
-    return response;
 };
