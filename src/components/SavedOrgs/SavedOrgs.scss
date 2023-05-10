@@ -6,6 +6,7 @@
 	gap: 21px;
 
 	.individual-org {
+		position: relative;
 		padding: 16px;
 		border: 1px solid #DFDFDF;
 		display: flex;
@@ -25,6 +26,7 @@
 			}
 
 			&_legal {
+				margin-bottom: 8px;
 				display: flex;
 				flex-direction: column;
 				gap: 6px;
@@ -47,10 +49,11 @@
 		.controls {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
 			align-items: flex-end;
 
 			&_delete {
+				position: absolute;
+				top: 0 + 16px;
 				border: none;
 				cursor: pointer;
 				width: 15px;
@@ -59,6 +62,8 @@
 			}
 
 			&_show-more {
+				position: absolute;
+				top: calc(100% - 24px);
 				color: $mid-grey;
 				text-decoration: underline;
 				cursor: pointer;
@@ -66,6 +71,7 @@
 				text-align: right;
 
 				&.active {
+
 					span {
 						transform: rotateX(180deg);
 					}
