@@ -1,4 +1,4 @@
-import {FC} from "react";
+import React, {FC} from "react";
 import {ICompany} from "../../App";
 import {IndividualOrg} from "./IndividualOrg";
 import "./SavedOrgs.scss"

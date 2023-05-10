@@ -1,5 +1,5 @@
 import {ICompany} from "../../App";
-import {FC, useState} from "react";
+import React, {FC, useState} from "react";
 
 interface IProps {
     company: ICompany,
